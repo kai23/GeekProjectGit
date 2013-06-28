@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+.projects {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #f2da94;
+	padding: 20px;
+	font-family: 'Lato';
+	font-weight: 400;
+	transition: all 0.5s;
+}
+
+.projects:hover {
+	background: #E5CD87
+}
+
+.projects h3{
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+.ajoutprojet {
+	background: #454545;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ajoutprojet h1 {
+	margin:0px;
+	margin-bottom: 30px;
+	color: #fff;
+	font-family: 'Ubuntu';
+}
+
+.ajoutprojet h2 {
+	color: #000;
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+.new_project {
+background: #67d8ef;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+border:none;
+}
+
+h2{
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+.listeprojets {
+background-color: #f5f5f5;
+border: 1px solid #e3e3e3;
+padding: 20px;
+}
+
+.btn-danger {
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+textarea.description {
+	max-width: 335px;
+}
+
+.add {
+	margin-top: 10px;
+}
+
+.remove {
+position: relative;
+float:right;
+}
+
+body {
+	background: #ededed;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+body {
+	background: rgb(232,230,216) url('http://cc.cerealconcept.com/img/back.jpg') center fixed;
+}

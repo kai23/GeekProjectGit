@@ -1,0 +1,65 @@
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400italic' rel='stylesheet' type='text/css'>
+  <title>GeekProjectReminder</title>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">Geek Project Reminder</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            {{> new_project}}
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <h2>SandBoX</h2>
+          <div class="listeprojets">
+            {{> liste_projets}}
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>OK Productions</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+</body>
+
+<template name="new_project">
+  <div class="new_project">
+  	<h2>Ajouter un projet</h2>
+    <hr>
+  	<label for="new_project_name">Nom du projet</label>
+    <input type="text" class="new_project_name"/><br/>
+    <label for="description">Description</label>
+    <textarea type="text" class="description"/><br/>
+    <label for="author_name">Auteur</label>
+    <input type="text" class="author_name"/><br/>
+    <label for="author_name">Email</label>
+    <input type="text" class="author_email"/><br/>
+    <hr>
+    <input type="button" class="add btn btn-success btn-large" value="Ajouter un Projet" />
+  </div>
+</template>
+
+<template name="liste_projets">
+ {{#each all_project}}
+<div class="projects">
+   	<input type="button" class="remove btn btn-danger" value="X" />
+  <h3>{{name}}</h3>
+<p>{{description}}</p>
+<p><a href="mailto:{{author_email}}"><i class="icon-mail"></i>{{author_name}}</a></p>
+</div>
+{{/each}}
+</template>
